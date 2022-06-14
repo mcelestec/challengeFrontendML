@@ -28,7 +28,7 @@
     input[type='submit'] {
         @include button-base;
 
-        background-color: $white;
+        background-color: $ligth-gray;
         background-image: url(../../../../public/img/ic_Search@2x.png.png);
         background-position: center;
         background-repeat: no-repeat;
