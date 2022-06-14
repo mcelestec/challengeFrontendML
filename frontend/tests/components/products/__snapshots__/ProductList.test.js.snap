@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test: probando <ProductList /> Llamada a ProductList: debe hacer match con el snapshot 1`] = `
+<div>
+  <header
+    class="search-bar__container"
+  >
+    <nav>
+      <a
+        aria-hidden="true"
+        href="/"
+      >
+        Mercado Libre Logo
+      </a>
+      <div
+        class="search-box__container"
+      >
+        <form>
+          <input
+            name="filterText"
+            placeholder="Nunca dejes de buscar"
+            type="text"
+            value=""
+          />
+          <input
+            type="submit"
+          />
+        </form>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

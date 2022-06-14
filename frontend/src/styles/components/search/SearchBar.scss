@@ -1,0 +1,40 @@
+.search-bar__container {
+    background-color: $yellow;
+    border: 0;
+    height: 60px;
+    padding: 0 10%;
+
+    @include lg {
+        padding: 0 2rem;
+        min-width: 0;
+    }
+
+    nav {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+        @include lg {
+            min-width: 0;
+        }
+    }
+
+    a {
+        background-image: url(../../../../public/img/Logo_ML@2x.png.png);
+        background-repeat: no-repeat;
+        background-size: auto 90%;
+        color: transparent;
+        height: 90%;
+        margin-top: 5px;
+        width: 134px;
+
+        @include sm {
+            height: 80%;
+        }
+
+        @include md {
+            width: 100px;
+        }
+    }
+}

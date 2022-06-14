@@ -1,0 +1,18 @@
+//general conf and vars
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/general";
+
+//components
+@import "../styles/components/search/SearchBar.scss";
+@import "../styles/components/search/SearchBox.scss";
+@import "../styles/components/categories/CategoryList.scss";
+@import "../styles/components/currencies/Currency.scss";
+@import "../styles/components/products/ProductList.scss";
+@import "../styles/components/products/ProductItem.scss";
+@import "../styles/components/products/ProductDescription.scss";
+
+//pages
+@import "../styles/pages/search/SearchResultPage.scss";
+@import "../styles/pages/products/ProductDetailPage.scss";
+@import "../styles/pages/ErrorPage.scss";

@@ -1,0 +1,128 @@
+.product-description__container {
+    background-color: $white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: calc(min(calc(680px + 1rem), 70%)) auto;
+
+    grid-template-areas:
+        "image information"
+        "image price"
+        "image button"
+        "image ."
+        "description .";
+
+    @include lg {
+        padding: 2rem;
+        min-width: 0;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "information"
+            "image"
+            "price"
+            "button"
+            "description";
+    }
+
+}
+
+.product-description__image {
+    grid-area: image;
+    min-height: 500px;
+    padding-right: 1rem;
+
+    @include lg {
+        min-height: 0;
+        padding-right: 0;
+    }
+
+    img {
+        border-radius: $border-radius;
+        height: auto;
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 100%;
+
+        @include lg {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.product-description__information {
+    grid-area: information;
+    padding-right: 2rem;
+
+    @include lg {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.18;
+    }
+
+    h3 {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        color: $middle-dark-gray;
+
+        @include lg {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.product-description__description {
+    grid-area: description;
+
+    h3 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    pre {
+        font-size: 1rem;
+        font-family: $font-family;
+        color: $middle-dark-gray;
+        white-space: pre-wrap;
+    }
+}
+
+.product-description__price {
+    grid-area: price;
+    margin-top: 2rem;
+    padding-right: 2rem;
+
+    @include lg {
+        margin-top: 0;
+    }
+
+    .currency__general {
+        font-size: 2.875rem;
+        font-weight: 300;
+    }
+}
+
+.product-description__buy-button {
+    grid-area: button;
+    @include button-base;
+
+    color: $ligth-gray;
+    background-color: $blue;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 2rem;
+    text-align: center;
+    margin: 2rem 2rem 0 0;
+    max-width: 13rem;
+
+    @include lg {
+        margin-top: 1rem;
+    }
+}

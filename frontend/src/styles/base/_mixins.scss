@@ -1,0 +1,44 @@
+@mixin page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+
+    @include lg {
+        padding: 0 2rem;
+    }
+}
+
+@mixin button-base {
+    border: none;
+    cursor: pointer;
+}
+
+// MEDIAS
+
+// Medium devices
+@mixin sm {
+    @media screen and (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media screen and (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media screen and (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+// extra-large devices
+@mixin xl {
+    @media screen and (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}

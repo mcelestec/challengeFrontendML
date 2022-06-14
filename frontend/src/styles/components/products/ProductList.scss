@@ -1,0 +1,25 @@
+.product-list__container {
+    background-color: $white;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+
+    @include lg {
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+            border-bottom: 1px solid $ligth-gray;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test: probando <CategoryList /> Llamada a CategoryList: debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="category-list__container"
+  >
+    <span
+      class="category-list__item"
+      data-testid="category-list-item"
+    >
+      Category 1
+    </span>
+    <span
+      class="category-list__item"
+      data-testid="category-list-item"
+    >
+      Category 2
+    </span>
+    <span
+      class="category-list__item"
+      data-testid="category-list-item"
+    >
+      Category 3
+    </span>
+    <span
+      class="category-list__item"
+      data-testid="category-list-item"
+    >
+      Category 4
+    </span>
+  </div>
+</div>
+`;

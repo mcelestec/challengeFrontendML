@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test: probando <Currency /> Llamada a Currency: debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="currency__general"
+  >
+    <span
+      class="currency__general-amount"
+      data-testid="currency-amount"
+    >
+      $ 900
+    </span>
+    <span
+      class="currency__general-decimals"
+      data-testid="currency-decimals"
+    >
+      100800
+    </span>
+  </div>
+</div>
+`;

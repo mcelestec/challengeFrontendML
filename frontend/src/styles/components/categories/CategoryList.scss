@@ -1,0 +1,28 @@
+.category-list__container {
+    margin: 1rem 0;
+    min-width: 1048px;
+
+    @include lg {
+        padding: 0 10px;
+        min-width: 0;
+    }
+}
+
+.category-list__item {
+    margin-right: 5px;
+    font-size: 0.875rem;
+    color: $middle-dark-gray;
+
+    &::after {
+        content: '>';
+        margin-left: 5px;
+    }
+
+    &:last-child {
+        font-weight: 700;
+
+        &::after {
+            content: '';
+        }
+    }
+}
